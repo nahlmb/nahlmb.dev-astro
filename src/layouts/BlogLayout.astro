@@ -1,0 +1,17 @@
+---
+import SizeContainer from "../components/SizeContainer.astro";
+import Text from "../components/Text.astro";
+import BasicLayout from "./BasicLayout.astro"
+const {content} = Astro.props;
+
+---
+
+<BasicLayout title={content.title}>
+    <SizeContainer>
+        <div class="pt-16 pb-28">
+            <Text>
+                <slot/>
+            </Text>
+        </div>
+    </SizeContainer>
+</BasicLayout>

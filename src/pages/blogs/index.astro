@@ -1,0 +1,35 @@
+---
+import BasicLayout from "../../layouts/BasicLayout.astro";
+import Text from "../../components/Text.astro";
+import SizeContainer from "../../components/SizeContainer.astro";
+
+const blogs = await Astro.glob('../../pages/blogs/**/*.md');
+---
+
+<BasicLayout title="blog">
+    <section>
+        <SizeContainer>
+            <div class="text-center py-12">
+                <h1 class="text-2xl font-bold">Blogs</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vulputate cras sit mauris, feugiat vitae
+                    lorem tempus elementum. Porttitor neque convallis commodo tempus eget in amet. Sit in justo eget
+                    phasellus. Magna tincidunt duis vitae duis orci, adipiscing. Suspendisse in elit neque sagittis
+                    ipsum lacus amet</p>
+            </div>
+        </SizeContainer>
+    </section>
+    <section>
+        <SizeContainer>
+            <div class="pt-6 py-24">
+                <ul>
+                    {blogs.map(post => <li class="border-b-2 mb-4 pb-2 hover:border-primary cursor-pointer">
+                        <a href={post.url}>
+                            <h3 class="font-bold text-lg">
+                            {post.frontmatter.title}</h3>
+                            <p>{post.frontmatter.description}</p></a>
+                    </li>)}
+                </ul>
+            </div>
+        </SizeContainer>
+    </section>
+</BasicLayout>

@@ -1,29 +1,110 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import ButtonPrimary from '../components/ButtonPrimary.astro';
+import ButtonSecondary from '../components/ButtonSecondary.astro';
+import SizeContainer from '../components/SizeContainer.astro';
+import Text from '../components/Text.astro';
+import BasicLayout from '../layouts/BasicLayout.astro';
 ---
-<Layout title="Welcome to Astro.">
-	<header class="border-b-2 border-b-outline flex items-center justify-center py-3">
-		<div>nhal</div>
-	</header>
-	<main class="container mx-auto">
-		<section class="flex items-center flex-col text-center py-12">
-			<h1 class="font-bold text-2xl" >Hello I'm Nahl</h1>
-			<p class="py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vulputate cras sit mauris, feugiat vitae lorem tempus elementum. Porttitor neque convallis commodo tempus eget in amet. Sit in justo eget phasellus. Magna tincidunt duis vitae duis orci, adipiscing. Suspendisse in elit neque sagittis ipsum lacus amet. Risus dolor consequat quam vitae turpis donec sed gravida enim. Amet amet vulputate amet ultrices varius orci in a venenatis. Vitae amet, lorem lorem nulla egestas vel. Vitae nam a, morbi risus, gravida leo sed egestas non. Accumsan, lorem sodales sapien enim.</p>
-			<div>
-				<button type="button" class="mr-2 py-2 px-4 inline-flex justify-center items-center gap-2 rounded-full border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800">
-					Explore my work
-				</button>
-				<button type="button" class="py-2 px-4 inline-flex justify-center items-center gap-2 rounded-full border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
-					Blog posts!
-				</button>
+
+<BasicLayout title="Welcome to Astro.">
+	<section id="greetings">
+		<SizeContainer>
+			<div class="flex items-center flex-col text-center py-12">
+				<h1 class="font-bold text-2xl">Hello I'm Nahl</h1>
+				<p class="py-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vulputate cras sit
+					mauris, feugiat vitae lorem tempus elementum. Porttitor neque convallis commodo tempus eget in
+					amet. Sit in justo eget phasellus. Magna tincidunt duis vitae duis orci, adipiscing. Suspendisse
+					in elit neque sagittis ipsum lacus amet. Risus dolor consequat quam vitae turpis donec sed
+					gravida enim. Amet amet vulputate amet ultrices varius orci in a venenatis. Vitae amet, lorem
+					lorem nulla egestas vel. Vitae nam a, morbi risus, gravida leo sed egestas non. Accumsan, lorem
+					sodales sapien enim.</p>
+				<div>
+					<ButtonPrimary href="/works">explore my work</ButtonPrimary>
+					<ButtonSecondary href="/blogs">blogs!</ButtonSecondary>
+				</div>
 			</div>
-		</section>
-	</main>
-</Layout>
+		</SizeContainer>
+	</section>
+	<section id="fields" class="bg-primary bg-opacity-5">
+		<SizeContainer>
+			<div class="flex flex-col items-center py-12">
+				<h1 class="font-bold text-2xl mb-6">The Fields</h1>
+				<div class="flex">
+					<div
+						class="flex bg-primary bg-opacity-5 hover:bg-gray-200 rounded-full transition p-1 dark:bg-gray-700 dark:hover:bg-gray-700">
+						<nav class="flex space-x-2" aria-label="Tabs" role="tablist">
+							<button
+								class="hs-tab-active:bg-black hs-tab-active:text-background hs-tab-active:hover:text-white py-2 px-6 inline-flex items-center gap-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-full hover:hover:text-primary dark:text-gray-400 dark:hover:text-white active"
+								id="hs-tab-js-behavior-item-1" data-hs-tab="#hs-tab-js-behavior-1"
+								aria-controls="hs-tab-js-behavior-1" role="tab">
+								programming
+							</button>
+							<button
+								class="hs-tab-active:bg-black hs-tab-active:text-background hs-tab-active:hover:text-white py-2 px-6 inline-flex items-center gap-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-full hover:hover:text-primary dark:text-gray-400 dark:hover:text-white"
+								id="hs-tab-js-behavior-item-1" data-hs-tab="#hs-tab-js-behavior-2"
+								aria-controls="hs-tab-js-behavior-2" role="tab">
+								product
+							</button>
+							<button
+								class="hs-tab-active:bg-black hs-tab-active:text-background hs-tab-active:hover:text-white py-2 px-6 inline-flex items-center gap-2 bg-transparent text-sm text-gray-500 hover:text-gray-700 font-medium rounded-full hover:hover:text-primary dark:text-gray-400 dark:hover:text-white"
+								id="hs-tab-js-behavior-item-1" data-hs-tab="#hs-tab-js-behavior-3"
+								aria-controls="hs-tab-js-behavior-3" role="tab">
+								design
+							</button>
+						</nav>
+					</div>
+				</div>
+				<div class="mt-6">
+					<div id="hs-tab-js-behavior-1" role="tabpanel" aria-labelledby="hs-tab-js-behavior-item-1" class="text-center">
+						<p class="text-gray-500 dark:text-gray-400">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vulputate cras sit mauris, feugiat vitae lorem tempus elementum. Porttitor neque convallis commodo tempus eget in amet. Sit in justo eget phasellus. Magna tincidunt duis vitae duis orci,.
+						</p>
+					</div>
+					<div id="hs-tab-js-behavior-2" class="hidden text-center" role="tabpanel" aria-labelledby="hs-tab-js-behavior-item-2">
+						<p class="text-gray-500 dark:text-gray-400">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vulputate cras sit mauris, feugiat vitae lorem tempus elementum. Porttitor neque convallis commodo tempus eget in amet. Sit in justo eget phasellus. Magna tincidunt duis vitae duis orci,.
+						</p>
+					</div>
+					<div id="hs-tab-js-behavior-3" class="hidden text-center" role="tabpanel"
+						aria-labelledby="hs-tab-js-behavior-item-3">
+						<p class="text-gray-500 dark:text-gray-400">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vulputate cras sit mauris, feugiat vitae lorem tempus elementum. Porttitor neque convallis commodo tempus eget in amet. Sit in justo eget phasellus. Magna tincidunt duis vitae duis orci,.
+						</p>
+					</div>
+				</div>
+			</div>
+		</SizeContainer>
+	</section>
+	<section>
+		<SizeContainer>
+			<div class="py-12 flex flex-col md:flex-row text-center md:text-start">
+				<Text>
+					<h2 class="m-0 mb-1">Link Tree</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vulputate cras sit mauris, feugiat
+						vitae lorem tempus elementum. Porttitor neque convallis commodo tempus eget in amet.</p>
+				</Text>
+				<div class="m-4"></div>
+				<div class="flex-none w-full md:w-1/2">
+					<ul>
+						<li
+							class="bg-primary bg-opacity-5 p-4 rounded-xl my-2 border-2 border-transparent hover:border-primary hover:border-opacity-10 cursor-pointer">
+							Nahl's Github</li>
+						<li
+							class="bg-primary bg-opacity-5 p-4 rounded-xl my-2 border-2 border-transparent hover:border-primary hover:border-opacity-10 cursor-pointer">
+							Nahl's LinkedIn</li>
+						<li
+							class="bg-primary bg-opacity-5 p-4 rounded-xl my-2 border-2 border-transparent hover:border-primary hover:border-opacity-10 cursor-pointer">
+							Nahl's Instagram</li>
+					</ul>
+				</div>
+			</div>
+		</SizeContainer>
+	</section>
+</BasicLayout>
 
 <style>
 	:root {
-		--astro-gradient: linear-gradient(0deg,#4F39FA, #DA62C4);
+		--astro-gradient: linear-gradient(0deg, #4F39FA, #DA62C4);
 	}
 </style>
