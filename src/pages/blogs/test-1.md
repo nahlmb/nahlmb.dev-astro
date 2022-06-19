@@ -1,6 +1,6 @@
 ---
 title: a first Blog Post
-description: My first blog post!
+caption: My first blog post!
 layout: ../../layouts/BlogLayout.astro
 ---
 

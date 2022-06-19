@@ -1,6 +1,12 @@
 ---
 title: a first Blog Post
 description: My first blog post!
+project-type : self-project
+product-type : mobile-apps
+tech-use : 
+  - flutter
+start-year : 2022
+end-year : 2022
 layout: ../../layouts/BlogLayout.astro
 ---
 

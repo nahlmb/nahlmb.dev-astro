@@ -1,6 +1,6 @@
 ---
 title: this is 6th
-description: My first blog post!
+caption: My first blog post!
 layout: ../../../layouts/BlogLayout.astro
 ---
 
