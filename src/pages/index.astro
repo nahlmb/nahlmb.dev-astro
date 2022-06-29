@@ -1,10 +1,15 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import ButtonPrimary from '../components/ButtonPrimary.astro';
 import ButtonSecondary from '../components/ButtonSecondary.astro';
 import SizeContainer from '../components/SizeContainer.astro';
 import Text from '../components/Text.astro';
 import BasicLayout from '../layouts/BasicLayout.astro';
+
+import imageProductSymbol from '../../src/assets/images/im_product_field.png';
+import imageDesignSymbol from '../../src/assets/images/im_design_field.png';
+import imageProgramingSymbol from '../../src/assets/images/im_programing_field.png';
+
+
 ---
 
 <BasicLayout title="Nahlmb.dev">
@@ -65,7 +70,7 @@ import BasicLayout from '../layouts/BasicLayout.astro';
 
 					<div id="hs-tab-js-behavior-1" role="tabpanel" aria-labelledby="hs-tab-js-behavior-item-1"
 						class="flex items-center">
-						<img src="/public/images/im_programing_field.png" alt="computer" class="h-40 pb-6 mr-6">
+						<img src={imageProgramingSymbol} alt="computer" class="h-40 pb-6 mr-6">
 						<p class="text-gray-700 dark:text-gray-400 w-5/6">
 							I'm a programmer since 2018, I tried different kinds of technologies, but what I love and
 							work
@@ -79,7 +84,7 @@ import BasicLayout from '../layouts/BasicLayout.astro';
 					<div id="hs-tab-js-behavior-2" class="hidden text-start" role="tabpanel"
 						aria-labelledby="hs-tab-js-behavior-item-2">
 						<div class="flex items-center">
-							<img src="/public/images/im_product_field.png" alt="product" class="h-40 pb-6 mr-6">
+							<img src={imageProductSymbol} alt="product" class="h-40 pb-6 mr-6">
 							<p class="text-gray-700 dark:text-gray-400">
 								Products are what we present to be a solution to people's needs that must be met, including
 								us!,
@@ -94,7 +99,7 @@ import BasicLayout from '../layouts/BasicLayout.astro';
 					<div id="hs-tab-js-behavior-3" class="hidden text-start" role="tabpanel"
 						aria-labelledby="hs-tab-js-behavior-item-3">
 						<div class="flex items-center">
-							<img src="/public/images/im_design_field.png" alt="design" class="h-40 pb-6 mr-6">
+							<img src={imageDesignSymbol} alt="design" class="h-40 pb-6 mr-6">
 						<p class="text-gray-700 dark:text-gray-400">
 							We like things that look beautiful, neat and good and that's why design is so important.
 							Talking
