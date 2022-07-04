@@ -1,6 +1,7 @@
 ---
-title: a first Blog Post
-caption: My first blog post!
+title: Dzulhijjah
+caption: Hari-hari terbaik, semoga Allah memberi taufik, sungguh kita butuh rahmatNya.
+lang: id
 layout: ../../layouts/BlogLayout.astro
 ---
 

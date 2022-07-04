@@ -10,7 +10,7 @@ const { title } = Astro.props as Props;
 ---
 
 <Layout title={title}>
-    <header class="border-b-2 border-b-outline flex items-center justify-center py-3 fixed w-full bg-background">
+    <header class="border-b-2 border-b-outline flex items-center justify-center py-3 fixed w-full bg-background" style="z-index: 100000;">
        <a href="/">
             <img src={imgReference} alt="logo" width="35">
        </a>
@@ -18,7 +18,7 @@ const { title } = Astro.props as Props;
     <main class="pt-16">
         <slot/>
     </main>
-    <footer class="bg-primary text-background text-center p-4 text-sm" style="bottom: 0; left: 0; right: 0;">
+    <footer class="border-t text-primary text-opacity-50 text-center p-4 text-sm" style="bottom: 0; left: 0; right: 0;">
 		Copyright (c) 2022 Nahl Munif Basalamah, Depok, Indonesia
 	</footer>
 </Layout>
