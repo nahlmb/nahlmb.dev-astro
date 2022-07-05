@@ -1,6 +1,6 @@
 ---
-title: Dzulhijjah
-caption: Hari-hari terbaik, semoga Allah memberi taufik, sungguh kita butuh rahmatNya.
+title: Sebenarnya
+caption: Sebenarnya jalan itu terbuka, kesuksesan terlihat jelas begitu pula dengan kegagalan, tapi diri kita penuh kelalaian kalau bukan karena pertolongan Allah.
 lang: id
 layout: ../../layouts/BlogLayout.astro
 ---
