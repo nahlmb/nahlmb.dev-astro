@@ -1,6 +1,6 @@
 ---
 title: Adab Bersosial Media
-caption: Sebenarnya jalan itu terbuka, kesuksesan terlihat jelas begitu pula dengan kegagalan, tapi diri kita penuh kelalaian kalau bukan karena pertolongan Allah.
+caption: Status sosial media sebagai sarana penyampaian informasi dan penyebaran konten yang bebas dan luas tentunya menjadikannya memiliki dampak positif dan negatif, lantas bagaimana baiknya kita menyikapinya?
 lang: id
 layout: ../../layouts/BlogLayout.astro
 date: 2022-07-10
