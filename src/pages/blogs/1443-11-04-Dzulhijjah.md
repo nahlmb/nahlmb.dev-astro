@@ -3,6 +3,9 @@ title: Dzulhijjah
 caption: Hari-hari terbaik, semoga Allah memberi taufik, sungguh kita butuh rahmatNya.
 lang: id
 layout: ../../layouts/BlogLayout.astro
+date: 2022-07-10
+hijri: 1443-11-04
+
 ---
 
 # Dzulhijjah
