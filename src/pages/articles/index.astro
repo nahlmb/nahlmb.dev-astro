@@ -1,0 +1,96 @@
+---
+import BasicLayout from "../../layouts/BasicLayout.astro";
+import Text from "../../components/Text.astro";
+import SizeContainer from "../../components/SizeContainer.astro";
+
+const articles = await Astro.glob("../../pages/articles/**/*.md");
+---
+
+<BasicLayout title="Article">
+    <div class="relative -mt-4 py-8 overflow-hidden">
+        <div class="bg-orange-500 absolute inset-0 -z-50"></div>
+        <div class="bg-yellow-300 rounded-full absolute top-0 blur-2xl bg-opacity-50 overflow-hidden"  style="z-index: -10; height: 700px; width:700px; right: -200px"></div>
+		<div class=" bg-yellow-500 rounded-full absolute top-48 blur-2xl bg-opacity-50 overflow-hidden"  style="z-index: -10; height: 700px; width:700px; left:-400px"></div>
+        <SizeContainer>
+            <h1 class="text-center font-bold text-6xl my-20 text-white">ARTICLES!</h1>
+            <div class="flex justify-center">
+                <div class="block md:flex -mt-2 max-w-3xl">
+                    <div class="bg-white text-black hover:bg-black hover:text-white  p-12 rounded-xl mr-0 mb-6 md:mb-0 md:mr-6 flex flex-col justify-between">
+                        <div class="mb-4">
+                            <h2 class="font-bold text-4xl">Lorem Ipsum Articles</h2>
+                            <p class="text-lg mt-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Ac vulputate cras sit mauris, feugiat vitae
+                                lorem tempus elementum. Porttitor neque convallis
+                                commodo.
+                            </p>
+                        </div>
+                        <div class="flex justify-between">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p class="font-bold text-4xl text-orange-600 hover:text-orange-500">--{">"}</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-black bg-opacity-20 p-6 text-white hover:text-black rounded-xl mb-6 hover:bg-white">
+                            <h2 class="text-xl font-bold">Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sequi consequatur dolorem!</p>
+                        </div>
+                        <div class="bg-black bg-opacity-20 text-white hover:text-black p-6 rounded-xl hover:bg-white">
+                            <h2 class="text-xl font-bold">Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sequi consequatur dolorem!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </SizeContainer>
+    </div>
+    <SizeContainer>
+        <div class="flex justify-center px-4 py-12">
+            <div class="max-w-xl text-center italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vulputate cras sit mauris, feugiat vitae lorem tempus elementum. Porttitor neque convallis commodo.
+            </div>
+        </div>
+
+        <ul class="flex flex-wrap justify-center items-stretch">
+           {articles.reverse().map(post =>
+           <li class="w-full md:w-1/2 lg:w-1/3 py-2 md:p-3">
+            <a href={post.url} class="bg-gray-200 hover:bg-black hover:text-white bg-opacity-40 p-6 rounded-xl h-full flex flex-col justify-between">
+                <div class="mb-4">
+                    <h3 class="text-2xl font-bold mb-2">{post.frontmatter.title}</h3>
+                    <p>{post.frontmatter.caption}</p>
+                </div>
+                <div class="flex items-center justify-end">
+                    <p class="text-sm mr-2 opacity-50">Lorem ipsum dolor sit amet consectetur</p>
+                    <div class="flex-none w-6 h-6 rounded-full bg-red-500"></div>
+                </div>
+            </a>
+        </li>)}
+        </ul>
+        <div class="py-6"></div>
+    </SizeContainer>
+
+    <!-- <section>
+        <SizeContainer>
+            <div class="text-center py-12">
+                <h1 class="text-2xl font-bold">Articles</h1>
+                <p>A Notes and reminder for ourselves</p>
+            </div>
+        </SizeContainer>
+    </section>
+    <section>
+        <SizeContainer>
+            <div class="pt-6 py-24">
+                <ul>
+                    {articles.reverse().map(post => <li class="border-b-2 mb-4 pb-2 hover:border-primary cursor-pointer">
+                        <a href={post.url}>
+                            <p class="opacity-50 text-sm">{post.frontmatter.hijri.substring(0, 10)} / {post.frontmatter.date.substring(0, 10)}</p>
+                            <h3 class="font-bold text-lg">
+                            {post.frontmatter.title}</h3>
+                            <p>{post.frontmatter.caption}</p>
+                        </a>
+                    </li>)}
+                </ul>
+            </div>
+        </SizeContainer>
+    </section> -->
+</BasicLayout>

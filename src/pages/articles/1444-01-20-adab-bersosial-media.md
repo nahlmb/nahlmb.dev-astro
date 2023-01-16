@@ -2,7 +2,7 @@
 title: Adab Bersosial Media
 caption: Status sosial media sebagai sarana penyampaian informasi dan penyebaran konten yang bebas dan luas tentunya menjadikannya memiliki dampak positif dan negatif, lantas bagaimana baiknya kita menyikapinya?
 lang: id
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/ArticleLayout.astro
 date: 2022-07-10
 hijri: 1443-11-04
 ---

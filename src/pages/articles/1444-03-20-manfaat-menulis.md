@@ -2,12 +2,11 @@
 title: Manfaat Menulis
 caption: Tidak lain dengan menulis ilmu yang kita dapat. Karena ilmu begitu berharga, mencatatnya berarti mengikatnya agar "buruan" itu tidak lari setelah sudah berhasil kita tangkap.
 lang: id
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/ArticleLayout.astro
 date: 2022-10-07
 hijri: 1444-03-11
 ---
 
-# Manfaat Menulis
 Bismillah, Alhamdulillah, Washalatu Wasalam 'Ala Rasulillah. Segala puji bagi Allah Ta'ala, Rabb kita Yang Maha Kuasa, Allah Yang Maha Besar, Maha Pengasih, Maha Penyanyang. Tidak ada nikmat yang kita rasakan kecuali dari Allah, Allah yang memberi kita makan dan minum, Allah yang melapangkan rezeki kita, mempermudah urusan kita. Tapi sering kali kita masih lupa mengingat Allah, dan amat parah jika kita malah mengedepankan hal lain daripada Allah Ta'ala. Maka semoga Allah ampuni dosa-dosa dan kelalaian kita, yang kita akui amat banyak ini, dan semoga Allah tolong kita untuk dapat bersyukur kepada-Nya. Shalawat dan salam semoga selalu tercurah kepada Nabi yang mulia, Muhammad shallallahu 'alaihi wasalam, beserta keluarga dan sahabat beliau.
 
 Ini adalah bulan ke-3 dari tahun 1444, bulan ke 10 dari 2022. Ada banyak yang terjadi dalam lika-liku perjalanan kita. Yang selama ini kita harapkan adalah agar setiap harinya kita menjadi lebih baik dari pada kemarin. Agar kita semakin dekat kepada Allah, dan dapat semakin bermanfaat bagi lingkungan dengan mengharap ridho Allah Ta'ala.

@@ -8,7 +8,7 @@ tech-use :
   - astro.js
 start-year : 2022
 end-year : 2022
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/ArticleLayout.astro
 ---
 
 # This Site

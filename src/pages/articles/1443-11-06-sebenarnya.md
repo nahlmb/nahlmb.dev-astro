@@ -2,7 +2,7 @@
 title: Sebenarnya
 caption: Sebenarnya jalan itu terbuka, kesuksesan terlihat jelas begitu pula dengan kegagalan, tapi diri kita penuh kelalaian kalau bukan karena pertolongan Allah.
 lang: id
-layout: ../../layouts/BlogLayout.astro
+layout: ../../layouts/ArticleLayout.astro
 date: 2022-07-10
 hijri: 1443-11-04
 ---
