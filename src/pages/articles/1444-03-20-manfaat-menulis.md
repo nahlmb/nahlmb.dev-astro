@@ -5,6 +5,8 @@ lang: id
 layout: ../../layouts/ArticleLayout.astro
 date: 2022-10-07
 hijri: 1444-03-11
+category: general
+subcategory: general
 ---
 
 Bismillah, Alhamdulillah, Washalatu Wasalam 'Ala Rasulillah. Segala puji bagi Allah Ta'ala, Rabb kita Yang Maha Kuasa, Allah Yang Maha Besar, Maha Pengasih, Maha Penyanyang. Tidak ada nikmat yang kita rasakan kecuali dari Allah, Allah yang memberi kita makan dan minum, Allah yang melapangkan rezeki kita, mempermudah urusan kita. Tapi sering kali kita masih lupa mengingat Allah, dan amat parah jika kita malah mengedepankan hal lain daripada Allah Ta'ala. Maka semoga Allah ampuni dosa-dosa dan kelalaian kita, yang kita akui amat banyak ini, dan semoga Allah tolong kita untuk dapat bersyukur kepada-Nya. Shalawat dan salam semoga selalu tercurah kepada Nabi yang mulia, Muhammad shallallahu 'alaihi wasalam, beserta keluarga dan sahabat beliau.

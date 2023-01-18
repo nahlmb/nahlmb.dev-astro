@@ -5,6 +5,8 @@ lang: id
 layout: ../../layouts/ArticleLayout.astro
 date: 2022-07-10
 hijri: 1443-11-04
+category: diniyah
+subcategory: general
 ---
 
 # Sebenarnya Jalan Itu Terbuka
