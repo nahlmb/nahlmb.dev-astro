@@ -9,36 +9,71 @@ const articles = await Astro.glob("../../pages/articles/**/*.md");
 <BasicLayout title="Article">
     <div class="relative -mt-4 py-8 overflow-hidden">
         <div class="bg-orange-500 absolute inset-0 -z-50"></div>
-        <div class="bg-yellow-300 rounded-full absolute top-0 blur-2xl bg-opacity-50 overflow-hidden"  style="z-index: -10; height: 700px; width:700px; right: -200px"></div>
-		<div class=" bg-yellow-500 rounded-full absolute top-48 blur-2xl bg-opacity-50 overflow-hidden"  style="z-index: -10; height: 700px; width:700px; left:-400px"></div>
+        <div
+            class="bg-yellow-300 rounded-full absolute top-0 blur-2xl bg-opacity-50 overflow-hidden"
+            style="z-index: -10; height: 700px; width:700px; right: -200px"
+        >
+        </div>
+        <div
+            class="bg-yellow-500 rounded-full absolute top-48 blur-2xl bg-opacity-50 overflow-hidden"
+            style="z-index: -10; height: 700px; width:700px; left:-400px"
+        >
+        </div>
         <SizeContainer>
-            <h1 class="text-center font-bold text-6xl my-20 text-white">ARTICLES!</h1>
+            <h1 class="text-center font-bold text-6xl my-20 text-white">
+                ARTICLES!
+            </h1>
             <div class="flex justify-center">
                 <div class="block md:flex -mt-2 max-w-3xl">
-                    <div class="bg-white text-black hover:bg-black hover:text-white  p-12 rounded-xl mr-0 mb-6 md:mb-0 md:mr-6 flex flex-col justify-between">
+                    <a
+                        href="/articles/1444-06-24-untuk-hal-yang-besar"
+                        class="w-2/3 bg-white text-black hover:bg-black hover:text-white p-12 rounded-xl mr-0 mb-6 md:mb-0 md:mr-6 flex flex-col justify-between"
+                    >
                         <div class="mb-4">
-                            <h2 class="font-bold text-4xl">Lorem Ipsum Articles</h2>
+                            <h2 class="font-bold text-4xl">
+                                Untuk hal yang besar
+                            </h2>
                             <p class="text-lg mt-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit. Ac vulputate cras sit mauris, feugiat vitae
-                                lorem tempus elementum. Porttitor neque convallis
-                                commodo.
+                                Secara singkat, pernahkah terbayang dalam benak
+                                kita, untuk apakah kita hidup? Sebuah pertanyaan
+                                singkat, sebuah pertanyaan sederhana, sebuah
+                                pertanyaan yang amat penting dijawab. Akan
+                                tetapi banyak sekali yang melewati pertanyaan
+                                ini, dan tidak acuh dengan...
                             </p>
                         </div>
                         <div class="flex justify-between">
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <p class="font-bold text-4xl text-orange-600 hover:text-orange-500">--{">"}</p>
+                            <p>Baca selengkapnya</p>
+                            <p
+                                class="font-bold text-4xl text-orange-600 hover:text-orange-500"
+                            >
+                                --{">"}
+                            </p>
                         </div>
-                    </div>
-                    <div>
-                        <div class="bg-black bg-opacity-20 p-6 text-white hover:text-black rounded-xl mb-6 hover:bg-white">
-                            <h2 class="text-xl font-bold">Lorem Ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sequi consequatur dolorem!</p>
-                        </div>
-                        <div class="bg-black bg-opacity-20 text-white hover:text-black p-6 rounded-xl hover:bg-white">
-                            <h2 class="text-xl font-bold">Lorem Ipsum</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sequi consequatur dolorem!</p>
-                        </div>
+                    </a>
+                    <div class="w-1/3">
+                        <a href="/articles/1444-06-24-beliau-yang-menyeru-kita-kepada-kemuliaan"
+                            class="block bg-black bg-opacity-20 p-6 text-white hover:text-black rounded-xl mb-6 hover:bg-white"
+                        >
+                            <h2 class="text-xl font-bold mb-2">
+                                Beliau Yang Menyeru Kita Kepada Kemuliaan
+                            </h2>
+                            <p class="">
+                                Adalah Nabi kita shallallahu alaihi wasallam
+                                sangat mengagumi rasa optimis..
+                            </p>
+                        </a>
+                        <a href="/articles/1444-06-24-teknologi-dan-jalan-kita-dengannya"
+                            class="block bg-black bg-opacity-20 text-white hover:text-black p-6 rounded-xl hover:bg-white"
+                        >
+                            <h2 class="text-xl font-bold mb-2">
+                                Teknologi dan Jalan Kita Dengannya
+                            </h2>
+                            <p>
+                                Teknologi terus berkembang, banyak perubahan
+                                yang kita rasakan. Kini interaksi..
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -46,25 +81,45 @@ const articles = await Astro.glob("../../pages/articles/**/*.md");
     </div>
     <SizeContainer>
         <div class="flex justify-center px-4 py-12">
-            <div class="max-w-xl text-center italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vulputate cras sit mauris, feugiat vitae lorem tempus elementum. Porttitor neque convallis commodo.
+            <div class="max-w-2xl text-center italic">
+                Berkata Lukman kepada anaknya, “Wahai anakku, dirikanlah shalat
+                dan suruhlah (manusia) mengerjakan yang baik dan cegahlah
+                (mereka) dari perbuatan yang munkar dan bersabarlah terhadap apa
+                yang menimpa kamu. Sesungguhnya yang demikian itu termasuk
+                hal-hal yang diwajibkan (oleh Allah).”
             </div>
         </div>
 
         <ul class="flex flex-wrap justify-center items-stretch">
-           {articles.reverse().map(post =>
-           <li class="w-full md:w-1/2 lg:w-1/3 py-2 md:p-3">
-            <a href={post.url} class="bg-gray-200 hover:bg-black hover:text-white bg-opacity-40 p-6 rounded-xl h-full flex flex-col justify-between">
-                <div class="mb-4">
-                    <h3 class="text-2xl font-bold mb-2">{post.frontmatter.title}</h3>
-                    <p>{post.frontmatter.caption}</p>
-                </div>
-                <div class="flex items-center justify-end">
-                    <p class="text-sm mr-2 opacity-50">Lorem ipsum dolor sit amet consectetur</p>
-                    <div class="flex-none w-6 h-6 rounded-full bg-red-500"></div>
-                </div>
-            </a>
-        </li>)}
+            {
+                articles.reverse().map((post) => (
+                    <li class="w-full md:w-1/2 lg:w-1/3 py-2 md:p-3">
+                        <a
+                            href={post.url}
+                            class="bg-gray-200 hover:bg-black hover:text-white bg-opacity-40 p-6 rounded-xl h-full flex flex-col justify-between"
+                        >
+                            <div class="mb-4">
+                                <h3 class="text-2xl font-bold mb-2">
+                                    {post.frontmatter.title}
+                                </h3>
+                                <p
+                                    class="truncate"
+                                    style="display: -webkit-box !important; -webkit-line-clamp: 3; -webkit-box-orient: vertical; white-space: normal;"
+                                >
+                                    {post.frontmatter.caption}
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-end">
+                                <p class="text-sm mr-2 opacity-50">
+                                    {post.frontmatter.category}/
+                                    {post.frontmatter.subcategory}
+                                </p>
+                                <div class="flex-none w-6 h-6 rounded-full bg-red-500" />
+                            </div>
+                        </a>
+                    </li>
+                ))
+            }
         </ul>
         <div class="py-6"></div>
     </SizeContainer>

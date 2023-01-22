@@ -3,6 +3,7 @@ import SizeContainer from "../components/SizeContainer.astro";
 import Text from "../components/Text.astro";
 import BasicLayoutNoFooter from "./BasicLayoutNoFooter.astro";
 const {content} = Astro.props;
+const date = new Date(content.date).toLocaleDateString('id-ID', {weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'});
 ---
 
 <BasicLayoutNoFooter title={content.title}>
@@ -21,7 +22,7 @@ const {content} = Astro.props;
         </SizeContainer>
         <div class="bg-black bg-opacity-5 flex justify-between">
             <div>
-                <p class="mb-6 p-6 w-full md:w-1/2 opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo blanditiis dolor at aliquam tempora mollitia dignissimos neque enim porro exercitationem.</p>
+                <p class="mb-6 p-6 w-full md:w-1/2 opacity-70">{content.title}, adalah artikel dengan kategori {content.category}/{content.subcategory}, dipublish pada {date}</p>
                 <h1 class="text-5xl md:text-6xl font-bold">{content.title}</h1>
             </div>
             <a href="/articles" class="bg-black text-white hover:text-orange-500 flex flex-col p-4 md:p-8 flex-none justify-end">
