@@ -92,8 +92,6 @@ Beliau mengajarkan kita untuk menjadi yang terbaik dan menebar manfaat, Beliau S
 
 Nabi shallallahu ‘alaihi wasallam bersabda,
 
-Rasulullah *Shallallahu’alaihi Wasallam* bersabda:
-
 مَنْ نَفَّسَ عَنْ مُؤْمِنٍ كُرْبَةً مِنْ كُرَبِ الدُّنْيَا نَفَّسَ الله عَنْهُ كُرْبَةً مِنْ كُرَبِ يَوْمِ الْقِيَامَةِ, ةِ وَمَنْ يَسَّرَ عَلَى مُعْسِرٍ يَسَّرَ الله عَلَيْهِ فِي الدُّنْيَا وَالْآخِرَةِ
 
 “*Barang siapa yang memudah kesulitan seorang mukmin dari berbagai kesulitan-kesulitan dunia, Allah akan memudahkan kesulitan-kesulitannya pada hari kiamat. Dan siapa yang memudahkan orang yang sedang dalam kesulitan niscaya akan Allah memudahkan baginya di dunia dan akhirat*” (HR. Muslim).
@@ -110,7 +108,7 @@ Beliau mengajarkan kita untuk,
 
 1. Selalu semangat dalam hal yang baik, memiliki cita cita yang tinggi dalam kebaikan
 2. Selalu memohon pertolongan Allah dan bergantung hanya kepada Allah, karena keberhasilan semuanya dari Allah, hanya bisa diraih dengan pertolongan Allah.
-3. Jangan menjadi pribadi yang lemas, pesimis, mudah menyerah bahkan sebelum berjuang, jadilah pribadi yang selalu optimis, mengejar kebaikan, mengejar surga Allah.
+3. Jangan menjadi pribadi yang lemah, pesimis, mudah menyerah bahkan sebelum berjuang, jadilah pribadi yang selalu optimis, mengejar kebaikan, mengejar surga Allah.
 4. Jika gagal jangan jangan sekali-kalinya menjadi terpuruk, katakan ini semua sudah menjadi ketetapan Allah yang pasti ada hikmahnya, dan kita yakin bahwa Allah Maha Baik kepada kita, dan kita pun berusaha kembali untuk bangkit dan terus memperbaiki diri.
 
 Beliau yang amat mulia apa yang beliau ajarkan kepada kita.
