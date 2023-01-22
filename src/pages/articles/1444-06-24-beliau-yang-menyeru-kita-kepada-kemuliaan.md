@@ -5,7 +5,7 @@ lang: id
 layout: ../../layouts/ArticleLayout.astro
 date: 2022-17-01
 hijri: 1444-06-24
-category: general
+category: diniyah
 subcategory: general
 ---
 

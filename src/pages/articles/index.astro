@@ -4,6 +4,10 @@ import Text from "../../components/Text.astro";
 import SizeContainer from "../../components/SizeContainer.astro";
 
 const articles = await Astro.glob("../../pages/articles/**/*.md");
+const categoryColor = {
+    'general' : 'bg-red-500',
+    'diniyah' : 'bg-green-500'
+}
 ---
 
 <BasicLayout title="Article">
@@ -111,10 +115,9 @@ const articles = await Astro.glob("../../pages/articles/**/*.md");
                             </div>
                             <div class="flex items-center justify-end">
                                 <p class="text-sm mr-2 opacity-50">
-                                    {post.frontmatter.category}/
-                                    {post.frontmatter.subcategory}
+                                    {post.frontmatter.category}/{post.frontmatter.subcategory}
                                 </p>
-                                <div class="flex-none w-6 h-6 rounded-full bg-red-500" />
+                                <div class={categoryColor[post.frontmatter.category] + " flex-none w-6 h-6 rounded-full"} />
                             </div>
                         </a>
                     </li>
