@@ -1,5 +1,5 @@
 ---
-title: Stop HIV App Policy
+title: Stop HIV App Terms and Conditions
 lang: en
 layout: ../../layouts/PolicyLayout.astro
 ---
